@@ -3,10 +3,10 @@ module.exports.run = (bot, message, args, Discord) => {
     message.author.voiceChannel.join().then(connection => {
       message.channel.send("I'm connected!")
     });
-  }
-} else {
+  } else {
   message.channel.send("Your not in a voice channel?")
-}
+  }
+} 
 
 module.exports.help = {
 "name": "connect"
