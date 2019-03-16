@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client();
 const fs = require("fs");
-var prefix = "/"
+var prefix = "!"
 //Required if editing do not change.
 
 bot.commands = new Discord.Collection()
@@ -22,8 +22,8 @@ bot.on("ready", () => {
     console.log("I'm alive!!")
 })
 
-bot.on("guildMemberAdd", () => {
-    bot.channels.get("556319363750428672").send("Welcome to my server! You bot. \(Maddness's words not mine.\)")
+bot.on("guildMemberAdd", (member) => {
+    bot.channels.get("556319363750428672").send(`Welcome to my server! ${member.user} You bot. \(Maddness's words not mine.\)`)
 })
 
 bot.on("message", message => {
