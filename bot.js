@@ -23,7 +23,7 @@ bot.on("ready", () => {
 })
 
 bot.on("guildMemberAdd", () => {
-    member.guild.channels.find("556319363750428672").send("Welcome to my server! You bot. \(Maddness's words not mine.\)")
+    bot.guild.channels.find("556319363750428672").send("Welcome to my server! You bot. \(Maddness's words not mine.\)")
 })
 
 bot.on("message", message => {
