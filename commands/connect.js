@@ -1,6 +1,6 @@
 module.exports.run = (bot, message, args, Discord) => {
-  if(message.author.voiceChannel) {
-    message.author.voiceChannel.join().then(connection => {
+  if(message.member.voiceChannel) {
+    message.member.voiceChannel.join().then(connection => {
       message.channel.send("I'm connected!")
     });
   } else {
