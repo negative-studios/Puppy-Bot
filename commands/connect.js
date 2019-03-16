@@ -1,5 +1,5 @@
 module.exports.run = (bot, message, args, Discord) => {
-  435224618790551575.join()
+  "435224618790551575".join()
   .then(connection => {
   });
 }
