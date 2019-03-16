@@ -1,5 +1,5 @@
 module.exports.run = (bot, message, args, Discord) => {
-  voiceChannel.join()
+  435224618790551575.join()
   .then(connection => {
   });
 }
