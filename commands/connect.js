@@ -1,7 +1,11 @@
 module.exports.run = (bot, message, args, Discord) => {
-  "435224618790551575".join()
-  .then(connection => {
-  });
+  if(message.author.voiceChannel) {
+    message.author.voiceChannel.join().then(connection => {
+      message.channel.send("I'm connected!")
+    });
+  }
+} else {
+  message.channel.send("Your not in a voice channel?")
 }
 
 module.exports.help = {
