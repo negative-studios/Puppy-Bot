@@ -22,6 +22,18 @@ bot.on("ready", () => {
     console.log("I'm alive!!")
 })
 
+bot.on("guildMemberAdd", () => {
+    member.guild.channels.find("556319363750428672").send("Welcome to my server! You bot. \(Maddness's words not mine.\)")
+})
+
+bot.on("message", message => {
+    if(message.content == "!JoinTest") {
+        if(message.author.id == "513103852409716736") {
+            bot.guilds.get("356256366173618187").channels.get("556319363750428672").send("Welcome to my server! You bot. \(Maddness's words not mine.\)")
+        }
+    }
+})
+
 //Command handeler Part 2
 bot.on('message', message => {
     let mArray = message.content.split(" ")
