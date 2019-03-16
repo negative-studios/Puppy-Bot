@@ -18,12 +18,12 @@ fs.readdir("./commands/", (err, files) => {
 
 //When bot starts up
 bot.on("ready", () => {
-    bot.user.setActivity("Looking for -help!")
+    bot.user.setActivity("Looking for !help!")
     console.log("I'm alive!!")
 })
 
 bot.on("guildMemberAdd", () => {
-    bot.guilds.get("356256366173618187").channels.find("556319363750428672").send("Welcome to my server! You bot. \(Maddness's words not mine.\)")
+    bot.channels.get("556319363750428672").send("Welcome to my server! You bot. \(Maddness's words not mine.\)")
 })
 
 bot.on("message", message => {
