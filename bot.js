@@ -18,7 +18,7 @@ fs.readdir("./commands/", (err, files) => {
 
 //When bot starts up
 bot.on("ready", () => {
-    bot.user.setActivity("For !help" { type: "WATCHING" })
+    bot.user.setActivity("For !help", { type: "WATCHING" })
     console.log("I'm alive!!")
 })
 
