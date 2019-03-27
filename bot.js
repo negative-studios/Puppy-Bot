@@ -18,7 +18,7 @@ fs.readdir("./commands/", (err, files) => {
 
 //When bot starts up
 bot.on("ready", () => {
-    bot.user.setActivity("Looking for !help!")
+    bot.user.setActivity("For !help" { type: "WATCHING" })
     console.log("I'm alive!!")
 })
 
@@ -26,13 +26,6 @@ bot.on("guildMemberAdd", (member) => {
     bot.channels.get("556319363750428672").send(`Welcome to my server! ${member.user} You bot. \(Maddness's words not mine.\)`)
 })
 
-bot.on("message", message => {
-    if(message.content == "!JoinTest") {
-        if(message.author.id == "513103852409716736") {
-            bot.guilds.get("356256366173618187").channels.get("556319363750428672").send("Welcome to my server! You bot. \(Maddness's words not mine.\)")
-        }
-    }
-})
 
 //Command handeler Part 2
 bot.on('message', message => {
