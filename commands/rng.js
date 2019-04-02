@@ -18,9 +18,7 @@ let emf2 = new Discord.RichEmbed()
 .setDescription("Please include a number after !rng!!")
 .setColor("RED")
 
-if(!numbermax) message.channel.send({embed: emf2})
-if(num === "NaN") message.channel.send({embed: emf})
-if(!numbermax || !num === "NaN") message.channel.send({embed: em})
+message.channel.send({embed: em})
 }
 
 
