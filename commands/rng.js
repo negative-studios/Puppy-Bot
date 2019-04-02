@@ -13,7 +13,7 @@ let emf = new Discord.RichEmbed()
 .setDescription("Your ment to put a number for the args silly!")
 .setColor("RED")
 
-let emf2 = new Dicord.RichEmbed()
+let emf2 = new Discord.RichEmbed()
 .setTitle("Oppsi Woopsi V2!")
 .setDescription("Please include a number after !rng!!")
 .setColor("RED")
