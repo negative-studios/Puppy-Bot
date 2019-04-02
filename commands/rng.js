@@ -5,7 +5,7 @@ let num = Math.floor(Math.random()*numbermax);
 let em = new Discord.RichEmbed()
 .setTitle("Random Number Generator")
 .setDescription("I guess I'm here to make a number for you. M'lord")
-.addField("Your number is:" num)
+.addField("Your number is:", num)
 .setColor("GREEN")
 
 let emf = new Discord.RichEmbed()
